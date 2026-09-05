@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Log In — InterviewAI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">AI</div>
+            <span>Interview<span class="purple">AI</span></span>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="index.html" class="secondary-btn auth-nav-btn">
+                Back to Home
+            </a>
+        </div>
+
+    </nav>
+
+
+    <!-- AUTH -->
+
+    <section class="auth">
+
+        <div class="auth-card">
+
+            <span class="small-heading">WELCOME BACK</span>
+
+            <h1>Log in to InterviewAI</h1>
+
+            <p class="auth-subtext">
+                Pick up your practice right where you left off.
+            </p>
+
+            <form id="loginForm" novalidate>
+
+                <div class="field">
+
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                    >
+
+                    <span class="field-error" id="emailError"></span>
+
+                </div>
+
+                <div class="field">
+
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="••••••••"
+                        autocomplete="current-password"
+                    >
+
+                    <span class="field-error" id="passwordError"></span>
+
+                </div>
+
+                <button type="submit" class="primary-btn auth-submit">
+                    Log In
+                    <span>→</span>
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+                Don't have an account?
+                <a href="signup.html">Sign up</a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="auth.js"></script>
+
+</body>
+
+</html>

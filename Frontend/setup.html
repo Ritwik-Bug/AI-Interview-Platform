@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Set Up Your Interview — InterviewAI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">AI</div>
+            <span>Interview<span class="purple">AI</span></span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="index.html#about">About</a>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="login-btn" id="loginBtn">
+                Login
+            </button>
+        </div>
+
+    </nav>
+
+
+    <!-- SETUP -->
+
+    <section class="setup">
+
+        <div class="setup-heading">
+
+            <span>STEP 1 OF 2</span>
+
+            <h1>Upload your resume</h1>
+
+            <p>
+                We'll read it and ask questions based on
+                your actual skills and experience.
+            </p>
+
+        </div>
+
+
+        <!-- RESUME UPLOAD -->
+
+        <div class="setup-block">
+
+            <h2>Resume</h2>
+
+            <label class="upload-zone" id="uploadZone" for="resumeInput">
+
+                <input
+                    type="file"
+                    id="resumeInput"
+                    accept=".pdf,.doc,.docx"
+                    hidden
+                >
+
+                <span class="upload-icon">📄</span>
+
+                <span class="upload-title" id="uploadTitle">
+                    Drop your resume here, or click to browse
+                </span>
+
+                <span class="upload-hint" id="uploadHint">
+                    PDF or Word, up to 5MB
+                </span>
+
+            </label>
+
+            <p class="upload-note">
+                The AI reads your resume to ask questions
+                about your actual skills and experience.
+            </p>
+
+        </div>
+
+
+        <!-- QUESTION COUNT -->
+
+        <div class="setup-block">
+
+            <h2>Number of questions</h2>
+
+            <div class="pill-group" id="countGroup">
+
+                <button class="pill" data-count="5">5</button>
+                <button class="pill" data-count="10">10</button>
+                <button class="pill" data-count="15">15</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUMMARY / START -->
+
+        <div class="setup-footer">
+
+            <div class="setup-summary" id="setupSummary">
+                Upload your resume to continue.
+            </div>
+
+            <button class="primary-btn" id="startBtn" disabled>
+                Start Interview
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="logo">
+            <div class="logo-icon">AI</div>
+            <span>Interview<span class="purple">AI</span></span>
+        </div>
+
+    </footer>
+
+    <script src="setup.js"></script>
+
+</body>
+
+</html>

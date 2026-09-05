@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Results — InterviewAI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">AI</div>
+            <span>Interview<span class="purple">AI</span></span>
+        </div>
+
+    </nav>
+
+
+    <!-- FEEDBACK -->
+
+    <section class="feedback">
+
+        <div class="feedback-inner">
+
+            <!-- SCORE -->
+
+            <div class="score-card">
+
+                <div class="score-ring" id="scoreRing">
+                    <span class="score-number" id="scoreNumber">--</span>
+                    <span class="score-label">/ 100</span>
+                </div>
+
+                <div class="score-text">
+
+                    <span class="small-heading">INTERVIEW COMPLETE</span>
+
+                    <h1 id="scoreHeadline">Nice work!</h1>
+
+                    <p id="scoreSummary">
+                        Here's how you did across all your questions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BREAKDOWN -->
+
+            <div class="breakdown">
+
+                <h2>Question breakdown</h2>
+
+                <div id="breakdownList"></div>
+
+            </div>
+
+
+            <!-- ACTIONS -->
+
+            <div class="feedback-actions">
+
+                <button class="secondary-btn" id="homeBtn">
+                    Back to Home
+                </button>
+
+                <button class="primary-btn" id="retryBtn">
+                    Try Another Interview
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="feedback.js"></script>
+
+</body>
+
+</html>

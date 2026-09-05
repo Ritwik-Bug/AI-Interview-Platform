@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview Session — InterviewAI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">AI</div>
+            <span>Interview<span class="purple">AI</span></span>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="secondary-btn" id="exitBtn">
+                Exit Interview
+            </button>
+        </div>
+
+    </nav>
+
+
+    <!-- SESSION -->
+
+    <section class="session">
+
+        <div class="session-inner">
+
+            <!-- PROGRESS -->
+
+            <div class="progress-row">
+
+                <span id="progressLabel">Question 1 of 10</span>
+
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+
+            </div>
+
+
+            <!-- AI CARD (reused from hero) -->
+
+            <div class="ai-card session-card">
+
+                <div class="card-header">
+
+                    <div class="status">
+                        <span class="status-dot"></span>
+                        AI Interviewer
+                    </div>
+
+                    <div class="three-dots">
+                        •••
+                    </div>
+
+                </div>
+
+
+                <div class="robot">
+
+                    <div class="robot-head">
+
+                        <div class="robot-eye"></div>
+                        <div class="robot-eye"></div>
+
+                    </div>
+
+                    <div class="robot-body">
+
+                        <div class="robot-screen">
+                            AI
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="question-box">
+
+                    <div class="question-box-top">
+
+                        <span id="questionLabel">QUESTION 01</span>
+
+                        <button
+                            class="icon-btn"
+                            id="speakBtn"
+                            title="Read question aloud"
+                            type="button"
+                        >
+                            🔊
+                        </button>
+
+                    </div>
+
+                    <p id="questionText">
+                        Loading your first question…
+                    </p>
+
+                </div>
+
+
+                <div class="thinking" id="thinkingDots">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANSWER -->
+
+            <div class="answer-block" id="answerBlock">
+
+                <div class="answer-label-row">
+
+                    <label for="answerInput">Your answer</label>
+
+                    <button
+                        class="mic-btn"
+                        id="micBtn"
+                        title="Speak your answer"
+                        type="button"
+                    >
+                        🎤 Speak
+                    </button>
+
+                </div>
+
+                <textarea
+                    id="answerInput"
+                    rows="6"
+                    placeholder="Type your answer here, or use the mic..."
+                ></textarea>
+
+                <div class="answer-footer">
+
+                    <span class="answer-hint">
+                        Take your time — there's no timer.
+                    </span>
+
+                    <button class="primary-btn" id="nextBtn">
+                        Next Question
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="interview.js"></script>
+
+</body>
+
+</html>
